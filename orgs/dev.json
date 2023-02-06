@@ -1,6 +1,6 @@
 {
   "orgName": "mfg-sample-data-for-sales-cloud - Dev Org",
-  "edition": "Developer",
+  "template": "0TT4S000001FtOz",
   "settings": {
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
