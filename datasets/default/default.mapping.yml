@@ -1,0 +1,46 @@
+Insert Product2:
+  sf_object: Product2
+  table: Product2
+  fields:
+  - IsActive
+  - DisplayUrl
+  - ExternalId
+  - ProductCode
+  - Description
+  - Family
+  - Name
+  - StockKeepingUnit
+  - QuantityUnitOfMeasure
+Insert ProductCatalog:
+  sf_object: ProductCatalog
+  table: ProductCatalog
+  fields:
+  - Name
+Insert ProductCategory:
+  sf_object: ProductCategory
+  table: ProductCategory
+  fields:
+  - Description
+  - IsNavigational
+  - Name
+  - SortOrder
+  lookups:
+    CatalogId:
+      table: ProductCatalog
+      key_field: CatalogId
+    ParentCategoryId:
+      table: ProductCategory
+      key_field: ParentCategoryId
+      after: Insert ProductCategory
+Insert ProductCategoryProduct:
+  sf_object: ProductCategoryProduct
+  table: ProductCategoryProduct
+  fields:
+  - IsPrimaryCategory
+  lookups:
+    ProductCategoryId:
+      table: ProductCategory
+      key_field: ProductCategoryId
+    ProductId:
+      table: Product2
+      key_field: ProductId

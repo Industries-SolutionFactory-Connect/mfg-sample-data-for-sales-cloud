@@ -1,0 +1,29 @@
+extract:
+  Product2:
+    fields:
+    - IsActive
+    - DisplayUrl
+    - ExternalDataSourceId
+    - ExternalId
+    - ProductCode
+    - Description
+    - Family
+    - Name
+    - StockKeepingUnit
+    - QuantityUnitOfMeasure
+  ProductCategoryProduct:
+    fields:
+    - ProductCategoryId
+    - IsPrimaryCategory
+    - ProductId
+  ProductCategory:
+    fields:
+    - Description
+    - IsNavigational
+    - Name
+    - SortOrder
+    - CatalogId
+    - ParentCategoryId
+  ProductCatalog:
+    fields:
+    - Name
