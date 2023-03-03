@@ -19,7 +19,9 @@
     },
     "languageSettings": {
       "enableTranslationWorkbench": true
-    }
+    },
+     "industriesManufacturingSettings":{
+      "enableIndManufacturing": true
+     }
   }
 }
-
